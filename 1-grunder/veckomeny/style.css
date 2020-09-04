@@ -1,0 +1,40 @@
+body {
+    background: #d6c190;
+}
+
+table {
+    width: 1000px;
+    background: #eeeeee;
+    border-spacing: 10px;
+    table-layout: fixed;
+    margin: 20px auto;
+}
+
+caption {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    background-image: url(./bilder/picknickduk.jpg);
+    background-size: cover;
+    padding: 20px;
+}
+
+td {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    background: #FFF;
+    padding: 15px;
+    border: 1px solid #cfcfcf;
+    border-radius: 5px;
+}
+
+th {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(#d6c190, #1733158c);
+    padding: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
