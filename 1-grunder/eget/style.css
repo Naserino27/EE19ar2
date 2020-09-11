@@ -1,0 +1,17 @@
+body {
+background-image: url(./bilder/eb44e73e718820dbd783e138a68e142c.1000x500x1.jpg);
+background-size: contain;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    background: linear-gradient(blueviolet, purple);
+    border-radius: 5px;
+    width: 700px;
+    
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+}
