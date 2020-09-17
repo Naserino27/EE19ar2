@@ -1,0 +1,31 @@
+body {
+    background: url(./bilder/flow.png);
+    background-size: auto 1500px;
+    background-color: #0E204D;
+}
+
+table {
+    
+}
+
+caption {
+    padding: 25px;
+    background-color: #12326E;
+}
+
+tr {
+    background-color: lightgray;
+}
+
+th {
+    padding: 15px 25px;
+    background-color: rebeccapurple;
+}
+
+td {
+    padding: 10px;
+}
+
+img {
+    width: 20px ;
+}

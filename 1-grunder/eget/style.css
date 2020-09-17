@@ -9,9 +9,14 @@ h1 {
     background: linear-gradient(blueviolet, purple);
     border-radius: 5px;
     width: 700px;
-    
+    padding: 2%;
+    text-align: center;
+
 }
 
 p {
     font-family: 'Playfair Display', serif;
+    text-align: center;
+    
+
 }
