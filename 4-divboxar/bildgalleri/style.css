@@ -63,14 +63,16 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 
 /* Sidans utseende*/
 body {
-    background: #200020;
+    background: url(./bilder/galaxbakgrund.jpg);
+    background-size: auto;
 }
 
 .kontainer {
     width: 800px;
     margin: auto;
     padding: 50px;
-    color: #684D8D;
+    background: #ba5d79bb;
+    color:  #BBB;
 }
 
 /*Sidans Sidhuvud*/
@@ -90,7 +92,7 @@ h1 {
 
 /*Bildboxens utseende*/
 .bild {
-    background: #701430;
+    background-image: linear-gradient(to right top, #510f51, #700755, #8e0054, #aa004e, #c20d44);
     padding: 50px;
     margin-bottom: 20px;
     border-radius: 10px;
@@ -98,11 +100,24 @@ h1 {
 
 img {
     width: 400px;
+    height: 300px;
     margin-bottom: 50px;
-    float: left;
-    margin-right: 20px;
+    margin: 0px 20px;
+    border-radius: 10px;
+    border: 5px solid #FFF;
 }
-p {}
+
+.imgL {
+    float: left; 
+}
+
+.imgR {
+    float: right;
+}
+.pR {
+    text-align: right;
+
+}
 
 hr {
     visibility: hidden;
