@@ -10,34 +10,47 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+/*Bakgrundens utseende*/
 body {
-
+    background-image: linear-gradient(to bottom, #a1e1c8, #9bc7a8, #93ae8d, #899676, #7d7e62);
 }
 
-.kontainer {
-    
+img {
+    width: auto;
 }
 
-div {
-
+/*menyns utseende*/
+.kontainer ul {
+    list-style-type: none; /*Tar bort punkterna*/
 }
 
-h1 {
-
+.kontainer ul li {
+    display: inline; /*horisontellt*/
 }
 
-ul {
-
+.kontainer ul a{
+    text-decoration: none;
+    background: #e9c46aff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow:1px 1px 3px rgba(153,153,153,0,9);
+    width: 130px;
+    display: inline-block; /*lika breda*/
+}
+.kontainer ul a:hover{
+    background: #e76f51ff;
+    box-shadow: none;
+}
+.kontainer ul a.aktiv {
+    background: #2a9d8fff;
 }
 
-li {
-
-}
-
-figure {
-
-}
-
-figcaption {
-
+/*Bildrutans Utseende*/
+.kontainer figure {
+    background: #FFF;
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(153,153,153,0,9);
 }
