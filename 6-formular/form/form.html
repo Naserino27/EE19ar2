@@ -9,10 +9,44 @@
 </head>
 <body>
     <form action="">
-        <label for="fnamn">Förnamn:</label><input id="fnamn" name="efnamn" type="text">
-        <label for="efnamn">Efternamn:</label><input id="efnamn" name="efnamn" type="text">
-        <label for="epost">Mail:</label><input id="epost" type="email" name="email">
-        <label for="pword">Lösenord:</label><input id="pword" type="password">
+        <label for="fnamn">Förnamn:</label><input id="fnamn" name="efnamn" type="text" placeholder="t.ex: Adam">
+        <label for="efnamn">Efternamn:</label><input id="efnamn" name="efnamn" type="text"
+            placeholder="t.ex: Andersson">
+        <label for="epost">Mail:</label><input id="epost" type="email" name="email"
+            placeholder="t.ex: adam.andersson@gmail.com">
+        <label for="">Kön:</label>
+        <div>
+            <input type="radio" name="kön">Kille
+            <input type="radio" name="kön">Tjej
+            <input type="radio" name="kön">Annat
+        </div>
+        <label for="">Allergier:</label>
+        <div>
+            <input type="checkbox">Gluten
+            <input type="checkbox">Laktos
+            <input type="checkbox">Nötter
+        </div>
+
+        <label>Hemland</label>
+        <select name="" id="">
+            <option value="0">Välj ett land</option>
+            <option value="1">Sverige</option>
+            <option value="2">Norge</option>
+            <option value="3">Finland</option>
+            <option value="4">Ryssland</option>
+            <option value="5">Danmark</option>
+            <option value="6">Ryssland</option>
+            <option value="7">Uruguay</option>
+            <option value="8">Narnia</option>
+            <option value="9">Tjackskogen</option>
+            <option value="10">Vitryssland</option>
+            <option value="11">Mumindalen</option>
+            <option value="12">4e dimensionen</option>
+        </select>
+
+        <label>Kommentar</label>
+        <textarea cols="30" rows="10" placeholder="skriv..."></textarea>
+
         <button>Skicka</button>
     </form>
 </body>
