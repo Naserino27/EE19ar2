@@ -48,7 +48,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
      background:#EFDAC5 ;
  }
  .rutor .burgare{
-
+     
  }
 
  .rutor .burgare h1{
@@ -63,7 +63,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
  }
 
  .rutor .burgare .img:hover{
-     
+    border: solid 15px #000;
  }
 
  .rutor .burgare p{
