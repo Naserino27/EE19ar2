@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leka med DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Skriv din text</h1>
+        <button onclick="mörk()">dark mode</button>
+        <button onclick="ljus()">light mode</button>
+    </div>
+    <script>
+        
+        function mörk(){
+            document.body.style.cssText = "background: black;"
+        }
+        function ljus(){
+            document.body.style.cssText = "background: white;"
+        }
+    </script>
+</body>
+</html>

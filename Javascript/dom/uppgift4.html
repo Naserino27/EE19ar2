@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Leka med DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Skriv din text</h1>
+        <button onclick="bild1()">bild 1</button>
+        <button onclick="bild2()">bild 2</button>
+        <button onclick="bild3()">bild 3</button>
+    </div>
+    <script>
+        
+        function bild1(){
+            document.body.style.cssText = "background: url(./bilder/galax1.jpg);"
+        }
+        function bild2(){
+            document.body.style.cssText = "background: url(./bilder/galax2.jpg);"
+        }
+        function bild3(){
+            document.body.style.cssText = "background: url(./bilder/galax3.jpg);"
+        }
+    </script>
+</body>
+</html>
