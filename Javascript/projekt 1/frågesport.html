@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Spelet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Kex Quest</h1>
+    <script>
+        var kexmums = prompt("Du befinner dig i ett tomt rum, allt du ser är en burk med kex. ska du äta kexen eller ej? Äter du kexen?");
+        var GO = "GAME OVER!!! ladda om sidan för att börja om";
+
+        if (kexmums == "ja") {
+
+            //Om man äter kexet så kommer man vidare
+            var direction1 = prompt("Du äter upp hela kexet, den var god, lite torr. Efter ett tag börjar rummet snurra runt dig och du sugs in i ett maskhål. När du ser dig omkring befinner du dig i en labyrint gjort av kex. Du kan antingen gå höger eller vänster, vart går du?");
+            if (direction1.toLowerCase() == "höger") {
+                //svänger man höger kommer man vidare
+                var dörr = prompt("Du svänger höger och kommer in till ett stort rum med två dörrar, markerade 'dörr 1' och 'dörr 2', vilken av dörrarna öppnar du?");
+                if (dörr.toLowerCase() == "dörr 2") {
+                    //Tar man dörr 2 kommer man vidare annars dör man
+                    var ande = prompt("Du tar dig allt djupare in i kexlabyrinten, du känner hur doften av nybakade kex blir starkare. Till slut stöter du på en kexande, han ger dig två val, ta dig hem och aldrig uppleva kex igen eller fortsätta för en chans att hitta kexskatten. vad väljer du (\"åka hem\" eller \"fortsätt\") ?");
+
+                    if (ande.toLowerCase() == "fortsätt") {
+                        alert("Anden är stolt över dig, som tack så teleporterar han dig till kexskatten! GRATTIS DU VINNER!!");
+                        document.body.style.cssText = "background: green"
+                        document.body.innerHTML = "<h1>DU VANN!!<h1>"
+                    } else {
+                        //GAME OVER
+                        alert("Du teleporteras hem, tre veckor senare dör du av kexbrist " + GO);
+                        document.body.style.cssText = "background: red"
+                    }
+                } else {
+                    //GAME OVER
+                    alert("bakom dörr 1 finns en kextiger som käkar upp dig på momangen. " + GO);
+                    document.body.style.cssText = "background: red"
+                }
+
+                document.body.style.cssText = "background: green"
+            } else {
+                //GAME OVER
+                alert("du svänger vänster och råkar gå in i en kexfälla " + GO);
+                document.body.style.cssText = "background: red"
+            }
+
+        } else {
+            //GAME OVER
+            alert("Du dör av svält " + GO);
+            document.body.style.cssText = "background: red"
+        }
+    </script>
+</body>
+</html>

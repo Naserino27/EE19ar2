@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ändra bakgrundsfärg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Får du köpa booz?</h1>
+        <button onclick="ålder()">Ange ålder</button>
+    </div>
+
+    <script>
+        function ålder() {
+            var ålder = prompt("Ange din ålder");
+            
+            //Om ålder >= 20 skicka till systemets hemsida
+            //Annars skicka till bolibompas hemsida
+
+            if (ålder >= 20) {
+                window.location.href = "https://systembolaget.se";
+            }
+            else{
+                window.location.href = "https://www.svtplay.se/genre/bolibompa";
+            }
+            
+        }
+    </script>
+</body>
+</html>

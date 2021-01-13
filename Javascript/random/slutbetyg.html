@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slutbetyg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Slutbetyg</h1>
+        <button onclick="slutbetyg()">Gissa slutbetyg</button>
+        <script>
+            function slutbetyg() {
+                //Slutbetyg ska slumpa ett tal som  - F,E,D,C,B,A
+                //var slumptal = Math.random; //0-1
+                var slumptal = Math.floor(Math.random() * 6); //0,1,2,3,4,5
+                //alert("slumptal = " + slumptal);
+                //if-sats lösning
+                /* if (slumptal == 0) {
+                    alert("du får F 🥶")
+                }
+                if (slumptal == 1) {
+                    alert("du får E 😔")
+                }
+                if (slumptal == 2) {
+                    alert("du får D 😐")
+                }
+                if (slumptal == 3) {
+                    alert("du får C 🙂")
+                }
+                if (slumptal == 4) {
+                    alert("du får B 😃")
+                }
+                if (slumptal == 5) {
+                    alert("du får A 🤩")
+                } */
+
+                switch (slumptal) {
+                    case 0:
+                        alert("du får F 🥶")
+                        break;
+                    case 1:
+                        alert("du får E 😔")
+                        break;
+                    case 2:
+                        alert("du får D 😐")
+                        break;
+                    case 3:
+                        alert("du får C 🙂")
+                        break;
+                    case 4:
+                        alert("du får B 😃")
+                        break;
+                    case 5:
+                        alert("du får A 🤩")
+                        break;
+                
+                    default:
+                        break;
+                }
+
+                //var betyg = ['du får A', 'du får B', 'du får C', 'du får D', 'du får E', 'du får F']
+                //alert(betyg[slumptal]);
+            }
+        </script>
+    </div>
+</body>
+</html>
