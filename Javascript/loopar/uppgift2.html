@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="kontainer">
+        <h1>Loopa</h1>
+        <button onclick="loopa()">Loopa!</button>
+        <input disabled type="text">
+    </div>
+    <script>
+
+        function loopa() {
+            //fråga efter två heltal där det ena talet är högre än det andra
+            var tal1 = prompt("Skriv in ett tal");
+            var tal2 = prompt("skriv in ett till tal");
+            //loopa om tal 2 är lägre än tal 1
+            while (tal2 < tal1) {
+                tal2 = prompt("det andra talet måste vara högre än det första")
+            }
+
+            //räkna ut differensen mellan tal 1 och tal 2
+            var diff = tal2 - tal1
+            console.log(diff)
+
+            //välja element vi ska jobba med
+            const eResultat = document.querySelector("input");
+
+            //skriv ut alla heltal mellan tal 1 och tal 2 (börja med tal 1 och inkrementera lika många gånger som differensen)
+            
+            for (var i = 0; i < diff - 1; i++) {
+                tal1++
+                console.log(tal1)
+                eResultat.value += tal1 + " ";
+            }
+
+        }
+    </script>
+</body>
+</html>

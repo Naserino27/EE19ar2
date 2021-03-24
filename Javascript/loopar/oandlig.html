@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Oändlig Loop</h1>
+        <button onclick="loopa()">Är du redo?</button>
+    </div>
+    <script>
+        function loopa() {
+            //Slumpa ett tal
+            var slumptal = Math.ceil(Math.random() * 50);
+
+            //Skriv ut det i konsolen
+            console.log("slumptal", slumptal);
+
+            //antal chanser
+            var chans = 5
+            console.log("chans", chans)
+
+            while (true) {
+
+                var gissning = prompt("gissa ett tal");
+                //chanser kvar?
+                if(chans==0){
+                    break;
+                }
+                
+                if (gissning == slumptal) {
+                    //om man gissar rätt
+                    alert("rätt!");
+                    break;
+                } else {
+                    //om man gissar fel
+                    alert("fel");
+                }
+                chans--
+                console.log("chans", chans)
+            }
+
+        }
+    </script>
+</body>
+</html>
