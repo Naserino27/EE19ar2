@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dagens Datum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Dagens Datum</h1>
+        <button onclick="datum()">Klicka för att se dagens datum</button><br>
+        <input disabled type="text">
+
+        <script>
+            // grabba tag i input rutan
+            const elementInput = document.querySelector("input");
+
+            //skapa namespace för "Date" så jag inte behöver skrive "Date." före allt, utan kan istället skriva bara "n"
+            n = new Date();
+
+            //skapa variabler för dagens datum, månad och år
+            y = n.getFullYear();
+            m = n.getMonth() + 1;
+            d = n.getDate();
+            
+            function datum() {
+              
+                //skriv ut hela dagens datum i input-rutan med hjälp av strängsammankoppling (string-concatenation)
+                elementInput.value = d + "/" + m + "/" + y;
+
+            }
+        </script>
+    </div>
+</body>
+</html>

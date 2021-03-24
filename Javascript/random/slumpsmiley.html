@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Slumpsmiley</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Slumpa en smiley</h1>
+        <button onclick="smiley()">Klicka för att slumpa en smiley</button><br>
+        <input disabled type="text">
+
+        <script>
+            // grabba tag i input rutan
+            const elementInput = document.querySelector("input");
+            
+
+            function smiley() {
+                //skapa en variabel för ett slumpat heltal mellan 0-5
+                var slumptal = Math.floor(Math.random() * 6); //0,1,2,3,4,5
+
+                //gör en array med smileys som kommer upp i rutan
+                var smiley = ['🤩', '😔', '😍', '😻', '😛', '😝']
+
+                //skriv ut slumptalet i input-rutan
+                elementInput.value = smiley[slumptal];
+
+            }
+        </script>
+    </div>
+</body>
+</html>
