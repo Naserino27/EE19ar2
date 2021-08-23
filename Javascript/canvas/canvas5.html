@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Hitta canvas-elementet
+        const ritYta = document.querySelector("canvas");
+
+        //Gör han större
+        ritYta.width = 800;
+        ritYta.height = 600;
+
+        //Slå på ritmotorn (rit-api)
+        var ctx = ritYta.getContext("2d");
+
+        // Rita en linje
+        //börja en bana
+        ctx.beginPath();
+        //flytta pennan
+        ctx.moveTo(700, 500);
+        //Rita
+        ctx.lineTo(600,500);
+        ctx.lineTo(600,400);
+        ctx.lineTo(550,400);
+        ctx.lineTo(550,500);
+        ctx.lineTo(450,500);
+        ctx.lineTo(450,300);
+        ctx.lineTo(400,300);
+        ctx.lineTo(575,100);
+        ctx.lineTo(750,300);
+        ctx.lineTo(700,300);
+        ctx.lineTo(700,500);
+        //färglägg
+        ctx.stroke();
+    </script>
+</body>
+</html>

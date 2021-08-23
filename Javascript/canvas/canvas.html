@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <canvas></canvas>
+    <script>
+        // Hitta canvas-elementet
+        const ritYta = document.querySelector("canvas");
+
+        //Gör han större
+        ritYta.width = 800;
+        ritYta.height = 600;
+
+        //Slå på rityta
+        var ctx = ritYta.getContext("2d");
+
+        //rita en fyrkant
+        //ctx.fillRect(100,100,200,200);
+
+        //röd fyrkant
+        //ctx.fillStyle = "red";
+        //ctx.fillRect(150,150,200,200)
+
+        //grön fyrkant
+       // ctx.fillStyle = "green";
+        //ctx.fillRect = (500,100,200,200)
+
+        //färgad rektangel
+        //ctx.fillStyle = "black";
+        //ctx.fillRect(100,200,200,200);
+        //ctx.fillStyle = "darkblue";
+        //ctx.fillRect(100,300,200,100);
+        //ctx.fillStyle = "purple";
+        //ctx.fillRect(100,400,200,100);
+        //ctx.fillStyle = "orange";
+        //ctx.fillRect(100,500,200,100);
+
+        //rutmönster
+        ctx.fillStyle = "red"
+        ctx.fillRect(100,100,100,100)
+        ctx.fillStyle = "green"
+        ctx.fillRect(200,100,100,100)
+        ctx.fillStyle = "red"
+        ctx.fillRect(300,100,100,100)
+        ctx.fillStyle = "green"
+        ctx.fillRect(100,200,100,100)
+        ctx.fillStyle = "red"
+        ctx.fillRect(200,200,100,100)
+        ctx.fillStyle = "green"
+        ctx.fillRect(300,200,100,100)
+
+
+    </script>
+</body>
+</html>
